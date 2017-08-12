@@ -6,7 +6,7 @@ public interface TestService {
 
 	void annotationMethod();
 
-	void doSomethingAfter();
+	void doAfter();
 
 	void doAround();
 

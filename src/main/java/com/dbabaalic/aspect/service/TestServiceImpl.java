@@ -10,7 +10,7 @@ public class TestServiceImpl implements TestService {
 		System.out.println("Inside target method.");
 	}
 	
-	public void doSomethingAfter() {
+	public void doAfter() {
 		System.out.println("Inside target method.");
 	}
 

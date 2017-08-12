@@ -22,7 +22,7 @@ public class TestController {
 
 	@RequestMapping(value="/after")
 	public void testAfter() {
-		testService.doSomethingAfter();
+		testService.doAfter();
 	}
 	
 	@RequestMapping(value="/afterReturning")
