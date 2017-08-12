@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class AfterAspect {
 
-	@Pointcut("execution(* com.dbabaalic.example.service.TestService.doSomethingAfter(..))")
+	@Pointcut("execution(* com.dbabaalic.aspect.service.TestService.doSomethingAfter(..))")
 	private void doAfterPointcut() {
 	}
 

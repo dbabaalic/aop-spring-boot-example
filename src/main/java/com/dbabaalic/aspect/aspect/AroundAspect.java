@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class AroundAspect {
 
-	@Around("execution(* com.dbabaalic.example.service.TestService.doAround(..))")
+	@Around("execution(* com.dbabaalic.aspect.service.TestService.doAround(..))")
 	public void doAround(ProceedingJoinPoint pjp) throws Throwable {
 		System.out.println("Around advice - before part");
 		pjp.proceed();

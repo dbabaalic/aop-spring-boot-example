@@ -12,7 +12,7 @@ import java.util.Arrays;
 @Aspect
 public class BeforeAspect {
 	
-	@Pointcut("execution(* com.dbabaalic.example.service.TestService.doBefore(..))")
+	@Pointcut("execution(* com.dbabaalic.aspect.service.TestService.doBefore(..))")
 	public void before() {
 	}
 

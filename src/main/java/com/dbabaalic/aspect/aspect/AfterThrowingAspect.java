@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class AfterThrowingAspect {
 
-	@AfterThrowing(pointcut = "execution(* com.dbabaalic.example.service.TestService.doThrowing(..))", throwing = "e")
+	@AfterThrowing(pointcut = "execution(* com.dbabaalic.aspect.service.TestService.doThrowing(..))", throwing = "e")
 	public void doThrowing(NullPointerException e) {
 		System.out.println("After throwing advice applied.");
 		System.out.println("Error message : " + e.getMessage());
